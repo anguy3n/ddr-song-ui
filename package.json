@@ -1,0 +1,14 @@
+{
+    "name": "ddr-songs",
+    "version": "1.0.0",
+    "type": "module",
+    "main": "songs.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/a-ngu/ddr-song-ui.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "homepage": "https://github.com/a-ngu/ddr-song-ui#readme",
+    "description": ""
+}

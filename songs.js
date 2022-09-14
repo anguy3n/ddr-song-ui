@@ -55,7 +55,6 @@ async function filter() {
     await create_collapsibles(sort_by_pack(songs))
 }
 filter()
-document.getElementById("p1").innerHTML = "hewo"
 setTimeout(() => {
     var coll = document.getElementsByClassName("collapsible");
     console.log(coll)

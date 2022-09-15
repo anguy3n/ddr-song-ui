@@ -3,6 +3,11 @@ body {
     background-color: #F8F8FF;
 }
 
+::selection {
+    color: #FFFFFF;
+    background: #C7007A;
+}
+
 #header {
     position: fixed;
     width: 100%;

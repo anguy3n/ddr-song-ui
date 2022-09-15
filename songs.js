@@ -73,7 +73,7 @@ function load_components(songs) {
     for (song in songs) {
         var artist = songs[song]["artist"];
         var folder_name = songs[song]["pack"]
-        var difficulties = songs[song]["difficulties"]
+        var difficulties = songs[song]["difficulties"].sort((a, b) => a - b);
         var song_container = document.createElement("div");
         song_container.className = "song-container";
         var song_content = document.createElement("div");
@@ -90,9 +90,10 @@ function load_components(songs) {
         folder.innerHTML = folder_name;
         var difficulties_components = document.createElement("div");
         difficulties_components.className = "difficulties";
+
         for (var item in difficulties) {
             var difficulty = document.createElement("p");
-            difficulty.innerHTML = item
+            difficulty.innerHTML = difficulties[item]
             difficulties_components.appendChild(difficulty);
         }
         var characteristics = document.createElement("div");

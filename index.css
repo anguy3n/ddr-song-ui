@@ -8,6 +8,14 @@ body {
     background: #C7007A;
 }
 
+body, a {
+    cursor:url('https://cdn.discordapp.com/attachments/1020087270646218792/1020113489030824086/BLUE_ARROW.png'), auto;
+}
+
+a:hover {
+    cursor:url('https://cdn.discordapp.com/attachments/1020087270646218792/1020113499239759942/RED_ARROW.png'), progress;
+}
+
 #header {
     position: fixed;
     width: 100%;

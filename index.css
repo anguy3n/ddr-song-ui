@@ -109,7 +109,7 @@ a:hover {
 
 .collapsible {
     background-color: #777;
-    color: white;
+    color: #FFFFFF;
     cursor: pointer;
     padding: 18px;
     width: 60%;
@@ -121,15 +121,15 @@ a:hover {
 
 .active,
 .collapsible:hover {
-    background-color: #555;
+    background-color: #222A68;
 }
 
 .content {
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background-color: #413F54;
-    color: #fff;
+    background-color: #222A68;
+    color: #FFFFFF;
 }
 
 li {
@@ -140,7 +140,8 @@ li {
     width: 600px;
     height: 400px;
     margin-bottom: 80px;
-    border: 1px solid rgba(0, 0, 0, .25);
+    border: 1px solid rgba(34, 42, 104, 0.25);
+    background-color: #FFFFFF;
     border-radius: 30px;
     margin-left: auto;
     margin-right: auto;

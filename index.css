@@ -16,7 +16,7 @@ a:hover {
     cursor:url('https://cdn.discordapp.com/attachments/1020087270646218792/1020113499239759942/RED_ARROW.png'), progress;
 }
 
-#header {
+header {
     position: fixed;
     width: 100%;
     height: 100px;
@@ -37,7 +37,7 @@ a:hover {
     position: absolute;
     width: 100%;
     height: 26px;
-    left: 701px;
+    left: 300px;
     top: 39px;
     
     font-family: 'DM Sans', sans-serif;
@@ -57,15 +57,14 @@ a:hover {
 }
 
 .landing {
-    position: fixed;
+    position: relative;
     width: 100%;
     height: 848px;
     left: 0px;
-    top: 100px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background: linear-gradient(180deg, rgba(248, 248, 255, 0) 0%, #F8F8FF 88.21%),url("https://cdn.discordapp.com/attachments/1020087270646218792/1020087523520806962/ARROWS_BG.png");
+    background: linear-gradient(180deg, rgba(248, 248, 255, 0) 0%, #F8F8FF 80%), url("https://cdn.discordapp.com/attachments/1020087270646218792/1020087523520806962/ARROWS_BG.png");
     background-size: cover;
     background-position: center center;
 }
@@ -75,25 +74,32 @@ a:hover {
     text-align: center;
     font-size: 100px;
     font-weight: bold;
-    line-height: 130px;
     margin: 0;
     -webkit-text-stroke: 8px solid #FFFFFF;
     position: absolute;
     left: 30%;
     right: 30%;
-    top: 15%;
+    top: 100px;
     }
 
 .updated-time {
     color: #222A68;
     text-align: center;
     font-size: 20px;
-    line-height: 35px;
     margin: 0;
     position: absolute;
     left: 30%;
     right: 30%;
-    top: 40%;
+    top: 320px;
+}
+
+.body-container {
+    position: absolute;
+    top: 800px;
+    width: 100%;
+    background: #F8F8FF;
+    background-size: cover;
+    background-position: center center;
 }
 
 .collapsible {

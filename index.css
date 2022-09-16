@@ -16,7 +16,7 @@ a:hover {
     cursor:url('https://cdn.discordapp.com/attachments/1020087270646218792/1020113499239759942/RED_ARROW.png'), progress;
 }
 
-header {
+.header {
     position: fixed;
     width: 100%;
     height: 100px;
@@ -26,34 +26,36 @@ header {
     border-bottom: 1px solid #222A68;
 }
 
-#navlinks {
+.navlinks {
+    position: fixed;
+    width: 100%;
+    height: 25px;
+    top: 40px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin: 0px;
     padding: 0px;
     gap: 50px;
-
-    position: absolute;
-    width: 100%;
-    height: 26px;
-    left: 300px;
-    top: 39px;
-    
     font-family: 'DM Sans', sans-serif;
     font-weight: bold;
     font-size: 20px;
-    line-height: 26px;
 }
 
-#navlinks a {
+.navlinks a {
     color: #222A68;
     text-decoration: none;
     }
      
-#navlinks a:hover{
+.navlinks a:hover{
     color: #C7007A;
     text-decoration: none;
+}
+
+#clubname {
+    font-size: 40px;
+    padding: 50px;
 }
 
 .landing {
@@ -64,7 +66,7 @@ header {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background: linear-gradient(180deg, rgba(248, 248, 255, 0) 0%, #F8F8FF 80%), url("https://cdn.discordapp.com/attachments/1020087270646218792/1020087523520806962/ARROWS_BG.png");
+    background: linear-gradient(180deg, rgba(248, 248, 255, 0) 0%, #F8F8FF 80%), url("https://cdn.discordapp.com/attachments/1020087270646218792/1020087523520806962/ARROWS_BG.png") repeat;
     background-size: cover;
     background-position: center center;
 }
@@ -97,9 +99,6 @@ header {
     position: absolute;
     top: 800px;
     width: 100%;
-    background: #F8F8FF;
-    background-size: cover;
-    background-position: center center;
 }
 
 .collapsible {

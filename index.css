@@ -9,11 +9,11 @@ body {
 }
 
 body, a {
-    cursor:url('https://cdn.discordapp.com/attachments/1020087270646218792/1020113489030824086/BLUE_ARROW.png'), auto;
+    cursor:url("data:image/svg+xml,%3Csvg width='35' height='36' viewBox='0 0 35 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.77362 8.51912L7.8992 8.57676L7.84156 9.45118L6.77272 25.6661L6.74551 26.079L7.01793 26.3904L9.77068 29.5368L10.0918 29.9039L10.5787 29.8768L14.1596 29.6781L14.5142 29.6585L14.7769 29.4196L17.2488 27.1722L18.6905 28.6953L18.9769 28.9978L19.3933 29.0076L24.3119 29.123L24.7398 29.133L25.0425 28.8303L28.1528 25.72L28.4554 25.4174L28.4454 24.9895L28.33 20.0709L28.3203 19.6544L28.0177 19.3681L26.4947 17.9263L28.742 15.4545L28.9809 15.1917L29.0006 14.8372L29.1993 11.2563L29.2263 10.7693L28.8593 10.4482L25.7128 7.69549L25.4014 7.42307L24.9886 7.45028L8.77362 8.51912Z' fill='%23187EC4' stroke='%23222A68' stroke-width='2'/%3E%3Cpath d='M27.0227 14.3718L25.222 16.3524L24.4418 16.304L21.6909 16.1336L23.6925 18.0284L26.3397 20.5342L26.4353 24.6085L23.9303 27.1135L19.856 27.0179L17.3502 24.3707L15.4554 22.3691L15.6258 25.12L15.6742 25.9002L13.6936 27.7009L10.9542 27.8529L8.79499 25.3849L9.77898 10.4572L24.7067 9.47319L27.1747 11.6324L27.0227 14.3718Z' fill='%23187EC4' stroke='white' stroke-width='2'/%3E%3C/svg%3E"), auto;
 }
 
 a:hover {
-    cursor:url('https://cdn.discordapp.com/attachments/1020087270646218792/1020113499239759942/RED_ARROW.png'), progress;
+    cursor:url("data:image/svg+xml,%3Csvg width='35' height='36' viewBox='0 0 35 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.90305 8.2928L8.02863 8.35044L7.97099 9.22486L6.90215 25.4398L6.87494 25.8527L7.14736 26.1641L9.90011 29.3105L10.2212 29.6775L10.7081 29.6505L14.289 29.4518L14.6436 29.4322L14.9063 29.1933L17.3782 26.9459L18.82 28.469L19.1063 28.7715L19.5227 28.7813L24.4413 28.8966L24.8692 28.9067L25.1719 28.604L28.2822 25.4937L28.5849 25.1911L28.5748 24.7632L28.4594 19.8445L28.4497 19.4281L28.1472 19.1418L26.6241 17.7L28.8715 15.2282L29.1103 14.9654L29.13 14.6109L29.3287 11.0299L29.3557 10.543L28.9887 10.2219L25.8422 7.46918L25.5308 7.19675L25.118 7.22397L8.90305 8.2928Z' fill='%23C7007A' stroke='%23222A68' stroke-width='2'/%3E%3Cpath d='M27.1521 14.1455L25.3515 16.1261L24.5713 16.0777L21.8203 15.9073L23.822 17.802L26.4691 20.3079L26.5647 24.3822L24.0597 26.8872L19.9854 26.7916L17.4796 24.1444L15.5848 22.1428L15.7553 24.8937L15.8036 25.6739L13.8231 27.4746L11.0836 27.6266L8.92441 25.1586L9.9084 10.2309L24.8361 9.24687L27.3041 11.4061L27.1521 14.1455Z' fill='%23C7007A' stroke='white' stroke-width='2'/%3E%3C/svg%3E"), progress;
 }
 
 .header {
@@ -29,7 +29,7 @@ a:hover {
 .navlinks {
     position: fixed;
     width: 100%;
-    height: 25px;
+    height: 20px;
     top: 40px;
     display: flex;
     flex-direction: row;
@@ -41,6 +41,11 @@ a:hover {
     font-family: 'DM Sans', sans-serif;
     font-weight: bold;
     font-size: 20px;
+}
+
+.navlinks p {
+    color: #C7007A;
+    text-decoration: none;
 }
 
 .navlinks a {
@@ -55,19 +60,20 @@ a:hover {
 
 #clubname {
     font-size: 40px;
-    padding: 50px;
+    padding: 40px;
 }
 
 .landing {
     position: relative;
     width: 100%;
     height: 848px;
-    left: 0px;
+    top: 50px;
+    left: -20px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background: linear-gradient(180deg, rgba(248, 248, 255, 0) 0%, #F8F8FF 80%), url("https://cdn.discordapp.com/attachments/1020087270646218792/1020087523520806962/ARROWS_BG.png") repeat;
-    background-size: cover;
+    background: linear-gradient(180deg, rgba(248, 248, 255, 0) 0%, #F8F8FF 80%), url("/assets/ARROWS.png");
+    background-image: repeat;
     background-position: center center;
 }
 
@@ -81,7 +87,7 @@ a:hover {
     position: absolute;
     left: 30%;
     right: 30%;
-    top: 100px;
+    top: 50px;
     }
 
 .updated-time {
@@ -92,7 +98,7 @@ a:hover {
     position: absolute;
     left: 30%;
     right: 30%;
-    top: 320px;
+    top: 270px;
 }
 
 .body-container {

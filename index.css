@@ -223,6 +223,7 @@ a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer-content a {
@@ -244,17 +245,25 @@ a:hover {
     color: #FFFFFF
 }
 
+.footer-logo-text:hover {
+    color: #F2F2F2 !important;
+}
+
 .discord-button {
     top: 51px;
     background-color: #FFFFFF;
     color: #222A68;
     height: 130px;
     border-radius: 30px;
-    width: 525px;
     font-weight: 700;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.discord-button:hover {
+    background-color: #F2F2F2 !important;
 }
 
 .tooltip {

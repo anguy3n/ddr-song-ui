@@ -63,7 +63,9 @@ a:hover {
 
 #clubname {
     font-size: 40px;
-    padding: 40px;
+    height: 60px;
+    display: flex;
+    align-items: center;
 }
 
 .landing {
@@ -114,6 +116,7 @@ a:hover {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+    height: auto;
 }
 
 .collapsible {
@@ -209,4 +212,45 @@ a:hover {
 
 .characteristics {
     display: flex;
+}
+
+.footer-content {
+    background-color: #222A68;
+    height: 227px;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-content a {
+    margin-top: 20px;
+    text-decoration: none;
+    font-family: 'DM Sans';
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.footer-logo-text {
+    color: #FFFFFF;
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+
+.footer-logo-text a {
+    color: #FFFFFF
+}
+
+.discord-button {
+    top: 51px;
+    background-color: #FFFFFF;
+    color: #222A68;
+    height: 130px;
+    border-radius: 30px;
+    width: 525px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }

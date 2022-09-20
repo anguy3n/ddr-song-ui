@@ -49,6 +49,11 @@ function insert_content(folder_songs, song_list) {
             song_artist.innerHTML = "N/A";
         } else if (artist.length > 40) {
             song_artist.innerHTML = artist.slice(0, 40) + '...';
+            song_artist.className += " tooltip";
+            var tooltip_text = document.createElement("span");
+            tooltip_text.className = "tooltip_text"
+            tooltip_text.innerHTML = artist;
+            song_artist.appendChild(tooltip_text);
         } else {
             song_artist.innerHTML = artist;
         }
@@ -79,7 +84,6 @@ function insert_content(folder_songs, song_list) {
 
 function create_collapsibles(sorted_songs) {
     sorted_keys = Object.keys(sorted_songs).sort();
-    console.log(sorted_keys)
     for (category in sorted_keys) {
         var button = document.createElement("button");
         button.className = "collapsible"

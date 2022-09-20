@@ -75,7 +75,9 @@ function insert_content(folder_songs, song_list) {
         }
         var song_artist = document.createElement("h5");
         song_artist.className = "song-artist";
-        if (artist.length > 15) {
+        if (artist == null) {
+            song_artist.innerHTML = "N/A";
+        } else if (artist.length > 15) {
             song_artist.innerHTML = artist.slice(0, 15) + '...';
         } else {
             song_artist.innerHTML = artist;
@@ -106,13 +108,15 @@ function insert_content(folder_songs, song_list) {
 }
 
 function create_collapsibles(sorted_songs) {
-    for (category in sorted_songs) {
+    sorted_keys = Object.keys(sorted_songs).sort();
+    console.log(sorted_keys)
+    for (category in sorted_keys) {
         var button = document.createElement("button");
         button.className = "collapsible"
-        button.innerText = category;
+        button.innerText = sorted_keys[category];
         var song_list = document.createElement("div");
         song_list.className = "song-list";
-        insert_content(sorted_songs[category], song_list);
+        insert_content(sorted_songs[sorted_keys[category]], song_list);
         var pack_and_songs = document.createElement("div");
         pack_and_songs.className = "pack-and-songs";
         pack_and_songs.appendChild(button);

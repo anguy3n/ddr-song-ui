@@ -163,6 +163,8 @@ a:hover {
     display: none;
     overflow: hidden;
     margin-left: 85px;
+    overflow-y: scroll;
+    max-height: 700px;
 }
 
 .song-container {
@@ -184,7 +186,7 @@ a:hover {
     color: #187EC4;
     border-radius: 10px;
     margin-right: 10px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -253,4 +255,43 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltip_text {
+    visibility: hidden;
+    font-size: 20px;
+    background-color: #C7007A;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -130px;
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltip_text {
+    visibility: visible;
+    opacity: 1;
 }

@@ -21,41 +21,6 @@ function sort_by_pack(songs) {
     return packs_sorted;
 }
 
-// function sort_alphabetical_title(songs) {
-//     var alphabetically_sorted = {};
-//     for (var song in songs) {
-//         let song_info = songs[song];
-//         let song_inital = song.charAt(0).toUpperCase();
-//         if (song_inital in alphabetically_sorted) {
-//             alphabetically_sorted[song_inital][song] = song_info;
-//         } else {
-//             alphabetically_sorted[song_inital] = {};
-//             alphabetically_sorted[song_inital][song] = song_info;
-//         }
-//     }
-//     return alphabetically_sorted;
-// }
-
-// function sort_alphabetical_artist(songs) {
-//     var alphabetically_sorted = {};
-//     for (var song in songs) {
-//         let song_info = songs[song];
-//         var artist = "N/A"
-//         var artist_inital = "N/A"
-//         if (song_info["artist"] != undefined) {
-//             artist = song_info["artist"];
-//             artist_inital = artist.charAt(0).toUpperCase();
-//         }
-//         if (artist_inital in alphabetically_sorted) {
-//             alphabetically_sorted[artist_inital][song] = song_info;
-//         } else {
-//             alphabetically_sorted[artist_inital] = {};
-//             alphabetically_sorted[artist_inital][song] = song_info;
-//         }
-//     }
-//     return alphabetically_sorted;
-// }
-
 function insert_content(folder_songs, song_list) {
     for (song in folder_songs) {
         var artist = folder_songs[song]["artist"];
@@ -68,8 +33,13 @@ function insert_content(folder_songs, song_list) {
         var song_title = document.createElement("h2");
         song_title.className = "song-title";
         song_title.innerHTML = song;
-        if (song.length > 15) {
-            song_title.innerHTML = song.slice(0, 15) + '...';
+        if (song.length > 40) {
+            song_title.innerHTML = song.slice(0, 40) + '...';
+            song_title.className += " tooltip";
+            var tooltip_text = document.createElement("span");
+            tooltip_text.className = "tooltip_text"
+            tooltip_text.innerHTML = song;
+            song_title.appendChild(tooltip_text);
         } else {
             song_title.innerHTML = song;
         }
@@ -77,8 +47,8 @@ function insert_content(folder_songs, song_list) {
         song_artist.className = "song-artist";
         if (artist == null) {
             song_artist.innerHTML = "N/A";
-        } else if (artist.length > 15) {
-            song_artist.innerHTML = artist.slice(0, 15) + '...';
+        } else if (artist.length > 40) {
+            song_artist.innerHTML = artist.slice(0, 40) + '...';
         } else {
             song_artist.innerHTML = artist;
         }

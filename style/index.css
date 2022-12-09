@@ -171,8 +171,6 @@ a:hover {
     position: relative;
     text-align: center;
     padding-top: 160px;
-    -webkit-text-stroke: 16px #FFFFFF;
-    paint-order: stroke fill;
 }
 
 .blue-arrow {

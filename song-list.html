@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>DDR Song List</title>
+    <link rel="stylesheet" type="text/css" href="style/song-list.css" />
+    <link rel="stylesheet" href="style/song-list.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="all-content">
+        <div class="header">
+            <div class="navlinks">
+                <a id="clubname" href="index.html">
+                    <img src="assets/LOGO-BLUE.svg"> Dance Games at Berkeley
+                </a>
+                <a href="index.html/#about">ABOUT</a>
+                <a href="index.html/#queueing">QUEUEING</a>
+                <a href="index.html/#rules">RULES</a>
+                <a href="song-list.html">SONG LIST</a>
+                <a href="https://docs.google.com/spreadsheets/d/18crZYXTEM-r6epwtfBM8DyvFu8Ljy5kWmaRwepWqnDc/edit?usp=sharing">SONG REQUEST</a>
+            </div>
+            <img src="assets/MENU.SVG" id="menu" onclick="click_menu()">
+            <img src="assets/CANCEL.svg" id="cancel" onclick="click_menu()">
+        </div>
+        <div id="menu-links">
+            <a href="index.html/#about">ABOUT</a>
+            <a href="index.html/#queueing">QUEUEING</a>
+            <a href="index.html/#rules">RULES</a>
+            <a href="song-list.html">SONG LIST</a>
+            <a href="https://docs.google.com/spreadsheets/d/18crZYXTEM-r6epwtfBM8DyvFu8Ljy5kWmaRwepWqnDc/edit?usp=sharing">SONG REQUEST</a>
+        </div>
+        <div class="landing">
+        </div>
+        <div class="title">
+            <p>Song List</p>
+        </div>
+        <div class="updated-time">
+            <p><b>Last updated:</b> December 7, 2022</p>
+        </div>
+
+        <div class="body-container">
+            <div id="body"></div>
+            <div class="footer-content">
+                <a class="footer-logo-text" href="https://dancegames.berkeley.edu/">
+                    <img class="footer-logo" height="60px" src="assets/LOGO-WHITE.svg"> Dance Games at Berkeley
+                </a>
+                <a class="discord-button" href="https://discord.gg/92wgk5abQU">
+                    <img class="discord-logo" src="assets/DISCORD-BLUE.svg"> &nbsp;&nbsp;Join our Discord!
+                </a>
+                <a class="discord-button-mobile" href="https://discord.gg/92wgk5abQU">
+                    <img class="discord-logo" src="assets/DISCORD-BLUE.svg"> &nbsp;&nbsp;Join!
+                </a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./songs.js">
+    </script>
+    <script type="text/javascript" src="./menu.js">
+    </script>
+</body>

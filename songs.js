@@ -1,3 +1,4 @@
+//fetches json file so we can use it 
 async function fetch_json() {
     var songs = await fetch('./songs.json').then(res => res.json())
         .then(data => {
@@ -6,6 +7,7 @@ async function fetch_json() {
     return songs;
 }
 
+//sorts the songs into packs
 function sort_by_pack(songs) {
     var packs_sorted = {};
     for (var song in songs) {
@@ -20,6 +22,7 @@ function sort_by_pack(songs) {
     }
     return packs_sorted;
 }
+
 
 function insert_content(folder_songs, song_list) {
     for (song in folder_songs) {
@@ -105,6 +108,7 @@ async function filter(filter_func) {
     await create_collapsibles(filter_func(songs))
 }
 
+//
 filter(sort_by_pack);
 setTimeout(() => {
     var coll = document.getElementsByClassName("collapsible");

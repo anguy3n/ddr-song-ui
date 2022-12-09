@@ -1,0 +1,503 @@
+@font-face {
+    font-family: Grantipo;
+    src: url(../fonts/Grantipo-Regular_TheFontsMaster.com.otf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Grantipo;
+    src: url(../fonts/Grantipo-Light_TheFontsMaster.com.otf);
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Grantipo;
+    src: url(../fonts/Grantipo-Medium_TheFontsMaster.com.otf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Grantipo;
+    src: url(../fonts/Grantipo-Bold_TheFontsMaster.com.otf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #F8F8FF;
+    margin: 0;
+    font-weight: lighter;
+    font-style: normal;
+}
+
+::selection {
+    color: #FFFFFF;
+    background: #F3B744;
+}
+
+body,
+a {
+    cursor: url("data:image/svg+xml,%3Csvg width='35' height='36' viewBox='0 0 35 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.77362 8.51912L7.8992 8.57676L7.84156 9.45118L6.77272 25.6661L6.74551 26.079L7.01793 26.3904L9.77068 29.5368L10.0918 29.9039L10.5787 29.8768L14.1596 29.6781L14.5142 29.6585L14.7769 29.4196L17.2488 27.1722L18.6905 28.6953L18.9769 28.9978L19.3933 29.0076L24.3119 29.123L24.7398 29.133L25.0425 28.8303L28.1528 25.72L28.4554 25.4174L28.4454 24.9895L28.33 20.0709L28.3203 19.6544L28.0177 19.3681L26.4947 17.9263L28.742 15.4545L28.9809 15.1917L29.0006 14.8372L29.1993 11.2563L29.2263 10.7693L28.8593 10.4482L25.7128 7.69549L25.4014 7.42307L24.9886 7.45028L8.77362 8.51912Z' fill='%233688BB' stroke='%23222A68' stroke-width='2'/%3E%3Cpath d='M27.0227 14.3718L25.222 16.3524L24.4418 16.304L21.6909 16.1336L23.6925 18.0284L26.3397 20.5342L26.4353 24.6085L23.9303 27.1135L19.856 27.0179L17.3502 24.3707L15.4554 22.3691L15.6258 25.12L15.6742 25.9002L13.6936 27.7009L10.9542 27.8529L8.79499 25.3849L9.77898 10.4572L24.7067 9.47319L27.1747 11.6324L27.0227 14.3718Z' fill='%23187EC4' stroke='white' stroke-width='2'/%3E%3C/svg%3E"), auto;
+}
+
+a:hover {
+    cursor: url("data:image/svg+xml,%3Csvg width='35' height='36' viewBox='0 0 35 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.90305 8.2928L8.02863 8.35044L7.97099 9.22486L6.90215 25.4398L6.87494 25.8527L7.14736 26.1641L9.90011 29.3105L10.2212 29.6775L10.7081 29.6505L14.289 29.4518L14.6436 29.4322L14.9063 29.1933L17.3782 26.9459L18.82 28.469L19.1063 28.7715L19.5227 28.7813L24.4413 28.8966L24.8692 28.9067L25.1719 28.604L28.2822 25.4937L28.5849 25.1911L28.5748 24.7632L28.4594 19.8445L28.4497 19.4281L28.1472 19.1418L26.6241 17.7L28.8715 15.2282L29.1103 14.9654L29.13 14.6109L29.3287 11.0299L29.3557 10.543L28.9887 10.2219L25.8422 7.46918L25.5308 7.19675L25.118 7.22397L8.90305 8.2928Z' fill='%23F3B744' stroke='%23222A68' stroke-width='2'/%3E%3Cpath d='M27.1521 14.1455L25.3515 16.1261L24.5713 16.0777L21.8203 15.9073L23.822 17.802L26.4691 20.3079L26.5647 24.3822L24.0597 26.8872L19.9854 26.7916L17.4796 24.1444L15.5848 22.1428L15.7553 24.8937L15.8036 25.6739L13.8231 27.4746L11.0836 27.6266L8.92441 25.1586L9.9084 10.2309L24.8361 9.24687L27.3041 11.4061L27.1521 14.1455Z' fill='%23F3B744' stroke='white' stroke-width='2'/%3E%3C/svg%3E"), progress;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    border-bottom: 1px solid #222A68;
+    z-index: 5;
+}
+
+.navlinks {
+    position: fixed;
+    width: 100%;
+    height: 20px;
+    top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    gap: 50px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navlinks p {
+    color: #F3B744;
+    text-decoration: none;
+}
+
+.navlinks a {
+    color: #222A68;
+    text-decoration: none;
+}
+
+.navlinks a:hover {
+    color: #F3B744;
+    text-decoration: none;
+}
+
+#menu {
+    float: right;
+    width: 50px;
+    top: 35px;
+    right: 20px;
+    position: fixed;
+    display: block;
+}
+
+#cancel {
+    display: none;
+    float: right;
+    width: 40px;
+    top: 25px;
+    right: 30px;
+    position: fixed;
+}
+
+#menu-links {
+    opacity: 1 !important;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    color: #222A69;
+    color: 20px;
+    text-decoration: none;
+    position: absolute;
+    top: 100px;
+    font-size: 30px;
+    display: none;
+}
+
+#menu-links a {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border: 1px solid #222A68;
+    right: 20px;
+    z-index: 3;
+    text-decoration: none;
+    color: #222A69;
+    text-align: right;
+}
+
+#clubname {
+    font-size: 40px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.landing {
+    background: linear-gradient(180deg, rgba(248, 248, 255, 0) 0%, #F8F8FF 80%), url("../assets/ARROWS.svg");
+    opacity: 0.1;
+    background-image: repeat;
+    background-position: center center;
+    position: absolute;
+    width: 100%;
+    height: 848px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: -1;
+}
+
+.title {
+    color: #3688BB;
+    opacity: 1 !important;
+    font-size: 100px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    position: relative;
+    text-align: center;
+    padding-top: 160px;
+    -webkit-text-stroke: 16px #FFFFFF;
+    paint-order: stroke fill;
+}
+
+.blue-arrow {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.section {
+    padding: 50px;
+    color: #222A69;
+    background-color: #FFFFFF;
+    border: 0.5px solid rgba(34, 42, 105, 0.25);
+    padding: 50px;
+    margin-left: 120px;
+    margin-right: 120px;
+    border-radius: 30px;
+    font-size: 22px;
+    font-family: Grantipo;
+    font-weight: lighter;
+}
+
+h3 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.section-title {
+    text-align: center;
+    color: #F3B744;
+    font-weight: bold;
+    font-size: 80px;
+    font-family: 'DM Sans';
+}
+
+.about-info-group {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-block: auto;
+    padding-top: 30px;
+}
+
+.about-info-group img {
+    height: 30px;
+    vertical-align: middle;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 20px;
+}
+
+.about-button {
+    color: #3688BB;
+    text-decoration: none;
+}
+
+.about-info {
+    border: 0.5px solid rgba(34, 42, 105, 0.25);
+    border-radius: 30px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-evenly;
+    background: #F8F8FF;
+    padding-left: 45px;
+    padding-right: 45px;
+    height: 70px;
+}
+
+.about-info a {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.about-info p {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.queueing-how-to {
+    border-left: 5px solid #222A69;
+}
+
+.clarifiers {
+    font-size: 18px;
+}
+
+#rules-section ol li {
+    font-weight: bold;
+}
+
+#rules-section ol ul li {
+    font-weight: lighter;
+}
+
+.footer-content {
+    background-color: #222A68;
+    height: 227px;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-content a {
+    margin-top: 20px;
+    text-decoration: none;
+    font-family: 'DM Sans';
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.footer-logo-text {
+    color: #FFFFFF;
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+
+.footer-logo-text a {
+    color: #FFFFFF
+}
+
+.footer-logo-text:hover {
+    color: #F2F2F2 !important;
+}
+
+.discord-button {
+    top: 51px;
+    background-color: #FFFFFF;
+    color: #222A68;
+    height: 130px;
+    border-radius: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.discord-button:hover {
+    background-color: #F2F2F2 !important;
+}
+
+.discord-button-dark {
+    background-color: #222A68;
+    color: #FFFFFF;
+    height: 110px;
+    width: 480px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 45px;
+    padding-right: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: -80px;
+    text-decoration: none;
+}
+
+.discord-button-dark:hover {
+    background-color: #252D6C !important;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (max-width: 768px) {
+    .collapsible {
+        width: 350px;
+        height: 80px;
+    }
+    .title {
+        font-size: 70px;
+    }
+    .song-list {
+        padding: 0px 30px;
+    }
+    .song-container {
+        width: 350px;
+    }
+    .updated-time {
+        top: 320px;
+        font-size: 18px;
+    }
+    .navlinks a {
+        display: none;
+    }
+    #clubname {
+        font-size: 20px
+    }
+    #clubname img {
+        width: 40px;
+    }
+    #menu {
+        display: inline;
+        width: 40px;
+    }
+    .navlinks {
+        justify-content: space-between;
+    }
+    .discord-button {
+        display: none;
+    }
+    .discord-button-mobile {
+        display: flex;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .collapsible {
+        width: 575px;
+        height: 92px;
+    }
+    .title {
+        font-size: 100px;
+    }
+    #menu {
+        display: inline;
+    }
+    .song-list {
+        padding: 0px 30px;
+    }
+    .song-container {
+        width: 575px;
+    }
+    .updated-time {
+        top: 370px;
+    }
+    .navlinks a {
+        display: none;
+    }
+    #clubname {
+        font-size: 30px
+    }
+    .navlinks {
+        justify-content: space-between;
+    }
+    .navlinks {
+        justify-content: space-between;
+    }
+    .discord-button {
+        display: none;
+    }
+    .discord-button-mobile {
+        display: flex;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .collapsible {
+        width: 575px;
+        height: 92px;
+    }
+    .title {
+        font-size: 70px;
+    }
+    #menu {
+        display: none;
+    }
+    .song-list {
+        padding: 0px 30px;
+    }
+    .song-container {
+        width: 575px;
+    }
+    .updated-time {
+        top: 370px;
+    }
+    #clubname {
+        font-size: 30px
+    }
+    .navlinks a {
+        display: flex;
+    }
+    .navlinks {
+        justify-content: center;
+    }
+    .discord-button {
+        display: flex;
+    }
+    .discord-button-mobile {
+        display: none;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .collapsible {
+        width: 600px;
+        height: 100px;
+    }
+    .title {
+        font-size: 100px;
+    }
+    #menu {
+        display: none;
+    }
+    .song-container {
+        width: 600px;
+    }
+    .updated-time {
+        top: 370px;
+    }
+    #clubname {
+        font-size: 40px
+    }
+    .navlinks a {
+        display: flex;
+    }
+    .navlinks {
+        justify-content: center;
+    }
+    .discord-button {
+        display: flex;
+    }
+    .discord-button-mobile {
+        display: none;
+    }
+}

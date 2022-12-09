@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>DDR Song List</title>
-    <link rel="stylesheet" type="text/css" href="index.css" />
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="style/index.css" />
+    <link rel="stylesheet" href="style/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,35 +20,138 @@
                 <a id="clubname" href="https://dancegames.berkeley.edu/">
                     <img src="assets/LOGO-BLUE.svg"> Dance Games at Berkeley
                 </a>
-                <a href="https://dancegames.berkeley.edu/#about">ABOUT</a>
-                <a href="https://dancegames.berkeley.edu/#queueing">QUEUEING</a>
-                <a href="https://dancegames.berkeley.edu/#rules">RULES</a>
-                <p>SONG LIST</p>
+                <a href="#about">ABOUT</a>
+                <a href="#queueing">QUEUEING</a>
+                <a href="#rules">RULES</a>
+                <a href="song-list.html">SONG LIST</a>
                 <a href="https://docs.google.com/spreadsheets/d/18crZYXTEM-r6epwtfBM8DyvFu8Ljy5kWmaRwepWqnDc/edit?usp=sharing">SONG REQUEST</a>
             </div>
+            <img src="assets/MENU.SVG" id="menu" onclick="click_menu()">
+            <img src="assets/CANCEL.svg" id="cancel" onclick="click_menu()">
         </div>
-
+        <div id="menu-links">
+            <a href="index.html/#about">ABOUT</a>
+            <a href="index.html/#queueing">QUEUEING</a>
+            <a href="index.html/#rules">RULES</a>
+            <a href="song-list.html">SONG LIST</a>
+            <a href="https://docs.google.com/spreadsheets/d/18crZYXTEM-r6epwtfBM8DyvFu8Ljy5kWmaRwepWqnDc/edit?usp=sharing">SONG REQUEST</a>
+        </div>
         <div class="landing">
-            <div class="title">
-                <p>Song List</p>
-            </div>
-            <div class="updated-time">
-                <p><b>Last updated:</b> September 14, 2022</p>
+        </div>
+        <div class="title">
+            <p>Welcome!</p>
+        </div>
+        <center>
+            <a href="https://discord.gg/92wgk5abQU" class="discord-button-dark">
+                <img class="discord-logo" src="assets/DISCORD-WHITE.svg"> &nbsp;&nbsp;Join Our Discord!
+            </a>
+        </center>
+        <div class="blue-arrow" id="about">
+            <img src="assets/BLUE-ARROW.svg">
+        </div>
+        <div id="about" class="section">
+            <div class="section-title">About Us</div>
+            <p>
+                <strong style="font-weight:bold">Dance Games at Berkeley</strong> fosters a community around and through arcade-style dance games like Dance Dance Revolution, Pump It Up, and In the Groove. We manage and maintain the Dance Dance Revolution
+                (DDR) machine in the MLK Jr. Student Union, located in the University of California, Berkeley. Access to the DDR machine depends on when the MLK Jr. Student Union is open, so please refer to the building’s operating hours.
+                <br> <br> Both the club and the DDR machine welcome everyone, regardless of skill level or experience!
+            </p>
+            <div class="about-info-group">
+                <div class="about-info">
+                    <img src="/assets/CLOCK.svg">
+                    <a class="about-button" href="https://studentunion.berkeley.edu/contact-us/">
+                    Operating Hours
+                </a>
+                </div>
+                <div class="about-info">
+                    <img src="/assets/LOCATION.svg">
+                    <p>
+                        2495 Bancroft Way, Berkeley, CA 94704
+                    </p>
+                </div>
+                <div class="about-info">
+                    <img src="/assets/PHONE.svg">
+                    <p>
+                        (510) 664-7976
+                    </p>
+                </div>
             </div>
         </div>
-
-        <div class="body-container">
-            <div id="body"></div>
-            <div class="footer-content">
-                <a class="footer-logo-text" href="https://dancegames.berkeley.edu/">
-                    <img class="footer-logo" height="60px" src="assets/LOGO-WHITE.svg"> Dance Games at Berkeley
-                </a>
-                <a class="discord-button" href="https://discord.gg/92wgk5abQU">
-                    <img class="discord-logo" src="assets/DISCORD.svg"> &nbsp;&nbsp;Join our Discord!
-                </a>
-            </div>
+        <div class="blue-arrow" id="queueing">
+            <img src="assets/BLUE-ARROW.svg">
+        </div>
+        <div class="section">
+            <div class="section-title">Queueing</div>
+            <p>
+                To make sure that everyone has a fair chance at playing on the DDR machine, please sign up for your turn on the queue, located on the left side of the machine. Write your name on an empty name tag and place it at the bottom of the queue. As a general
+                rule, you can calculate how long you have to wait to play by counting the number of Player 1 names, and then multiplying that count by 10. That should give you a rough estimate of how many minutes you have to wait.
+            </p>
+            <p class="queueing-how-to">
+                <h3>How to Use the Queue: </h3>
+                <ol>
+                    <li>Write your name on an empty magnetic name tag using the dry-erase marker. Use one name tag per player.</li>
+                    <li>Place the name tag at the bottom of the queue, two players per row.* If you are playing by yourself, you are encouraged to join the queue next to another single player, with their permission.</li>
+                    <li>Once your name is at the top of the queue and your name is called, it is your turn to play. Each row of the queue is allowed to play a set of 3 songs shorter than 3:00 each.**</li>
+                    <li> After your set, call out the name of the next players on the queue if they aren't already getting ready to play.</li>
+                    <li>If you want to play again, move your name tag back to the bottom of the queue. If you are finished playing, erase your name from the name tag, and return it to the right of the queue.</li>
+                </ol>
+                <p class="clarifiers">
+                    *Groups of three will sometimes split the 3 songs in their set among themselves (with each person playing twice). This is allowed and encouraged, as it helps the queue move faster!
+                    <br><br> **If a song longer than 3:00 is selected, it counts as 2 of the 3 songs in the set. If a song longer than 6:00 is selected, it counts as all 3 of the songs in the set.
+                </p>
+            </p>
+        </div>
+        <div class="blue-arrow" id="rules">
+            <img src="assets/BLUE-ARROW.svg">
+        </div>
+        <div class="section" id="rules-section">
+            <div class="section-title">Our Rules</div>
+            <p>
+                <ol>
+                    <li>Respect the equipment.</li>
+                    <ul>
+                        <li>Be gentle with the pads. They are modified to be extra-sensitive so aggressive stomping isn't necessary.</li>
+                        <li>Keep your items off of the machine when not playing.</li>
+                        <li>Do not place open-lid drinks or food on or near the machine.</li>
+                        <li>Do not go behind or open the back of the cabinet.</li>
+                        <li>Do not steal equipment from around the machine (markers, fans, etc).</li>
+                    </ul>
+                    <li>Respect the space.</li>
+                    <ul>
+                        <li>Follow the direction and rules put in place by MLK staff. The cabinet is in their building and all of their rules still apply.</li>
+                        <li>Clean up after yourself.</li>
+                        <li>Keep noise levels to a reasonable level. Excessive noise can be disruptive to players and other people who we share the space with.</li>
+                        <li>Stay a few feet away from the machine when you are not playing.</li>
+                    </ul>
+                    <li>Respect each other.</li>
+                    <ul>
+                        <li>Our community has zero-tolerance for bigotry or hate of any kind. If you ever feel unwelcome, let MLK staff or any club officer know and we'll address it accordingly.</li>
+                        <li>Be kind, helpful, and welcoming to veterans and newcomers alike.</li>
+                        <li>Use and respect the queue. It can get long, but it's only fair if everyone waits their turn. Do not manipulate or game the queue in a way that is unfair to others.</li>
+                        <li>Do not play songs longer than 10 minutes without the consent of everyone else in the queue. </li>
+                        <li>If the queue is long (4+ rows), play with someone else if possible.</li>
+                        <li>If you're confused, ask questions! Our Discord server is open to everyone, and our community is more than happy to answer any questions you may have.</li>
+                    </ul>
+                    <li>
+                        Use common sense.</li>
+                    <ul>
+                        <li>Understand that this list of rules is not exhaustive for actions that aren't welcome in our community.</li>
+                    </ul>
+                </ol>
+            </p>
+        </div>
+        <div class="blue-arrow">
+            <img src="assets/BLUE-ARROW.svg">
         </div>
     </div>
-    <script type="text/javascript" src="./songs.js">
+    <div class="footer-content">
+        <a class="footer-logo-text" href="https://dancegames.berkeley.edu/">
+            <img class="footer-logo" height="60px" src="assets/LOGO-WHITE.svg"> Dance Games at Berkeley
+        </a>
+        <a class="discord-button" href="https://discord.gg/92wgk5abQU">
+            <img class="discord-logo" src="assets/DISCORD-BLUE.svg"> &nbsp;&nbsp;Join our Discord!
+        </a>
+    </div>
+    <script type="text/javascript" src="./menu.js">
     </script>
 </body>

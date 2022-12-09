@@ -227,6 +227,11 @@ h3 {
     text-decoration: none;
 }
 
+.about-button:hover {
+    color: #F3B744;
+    text-decoration: none;
+}
+
 .about-info {
     border: 0.5px solid rgba(34, 42, 105, 0.25);
     border-radius: 30px;
@@ -332,7 +337,7 @@ h3 {
 }
 
 .discord-button-dark:hover {
-    background-color: #252D6C !important;
+    background-color: #7289DA !important;
 }
 
 

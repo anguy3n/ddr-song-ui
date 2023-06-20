@@ -377,6 +377,10 @@ a:hover {
     .title {
         font-size: 70px;
     }
+    #menu-links {
+        position: fixed;
+        z-index: 3;
+    }
     .song-list {
         padding: 0px 30px;
     }
@@ -391,7 +395,8 @@ a:hover {
         display: none;
     }
     #clubname {
-        font-size: 20px
+        font-size: 20px;
+        margin-left: 20px;
     }
     #clubname img {
         width: 40px;
@@ -425,6 +430,10 @@ a:hover {
     #menu {
         display: inline;
     }
+    #menu-links {
+        position: fixed;
+        z-index: 3;
+    }
     .song-list {
         padding: 0px 30px;
     }
@@ -438,7 +447,8 @@ a:hover {
         display: none;
     }
     #clubname {
-        font-size: 30px
+        font-size: 30px;
+        margin-left: 20px;
     }
     .navlinks {
         justify-content: space-between;

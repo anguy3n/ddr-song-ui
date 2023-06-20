@@ -349,10 +349,48 @@ h3 {
         height: 80px;
     }
     .title {
-        font-size: 70px;
+        font-size: 60px;
+        height: 230px;
+    }
+    .discord-button-dark {
+        width: 190px;
+        height: 60px;
+        font-size: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 10px;
+    }
+    .discord-button-dark img {
+        width: 40px;
+        padding-right: 10px;
+    }
+    .blue-arrow img {
+        height: 80px;
+    }
+    .blue-arrow {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #menu-links {
+        position: fixed;
+        z-index: 3;
+    }
+    .footer-content a {
+        font-size: 20px;
+    }
+    .section {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 20px;
+    }
+    .section-title {
+        font-size: 40px;
     }
     .song-list {
         padding: 0px 30px;
+    }
+    h3 {
+        font-size: 30px;
     }
     .song-container {
         width: 350px;
@@ -365,7 +403,16 @@ h3 {
         display: none;
     }
     #clubname {
-        font-size: 20px
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .about-info {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    .about-info-group {
+        display: flex;
+        flex-wrap: wrap;
     }
     #clubname img {
         width: 40px;
@@ -399,6 +446,10 @@ h3 {
     #menu {
         display: inline;
     }
+    #menu-links {
+        position: fixed;
+        z-index: 3;
+    }
     .song-list {
         padding: 0px 30px;
     }
@@ -412,9 +463,17 @@ h3 {
         display: none;
     }
     #clubname {
-        font-size: 30px
+        font-size: 30px;
+        margin-left: 30px;
     }
-    .navlinks {
+    .about-info {
+        margin-top: 10px;
+    }
+    .about-info-group {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #operating-hours .navlinks {
         justify-content: space-between;
     }
     .navlinks {

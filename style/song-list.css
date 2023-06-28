@@ -387,6 +387,9 @@ a:hover {
     .song-container {
         width: 350px;
     }
+    .collapsible {
+        font-size: 24px;
+    }
     .updated-time {
         top: 320px;
         font-size: 18px;
